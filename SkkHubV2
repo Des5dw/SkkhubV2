@@ -1,0 +1,426 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "skk hub", HidePremium = false, IntroText = "Skk Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "Skk",
+	Content = "Made by Skk",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local MainTab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+MainTab:AddButton({
+	Name = "click delete",
+	Callback = function()
+      		print("button pressed")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Des5dw/A/main/A'))()
+  	end    
+})
+MainTab:AddButton({
+	Name = "Anit AFK",
+	Callback = function()
+      		print("button pressed")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz'))()
+  	end    
+})
+MainTab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		print("button pressed")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+MainTab:AddButton({
+	Name = "Fates Admin",
+	Callback = function()
+      		print("button pressed")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua'))()
+  	end    
+})
+MainTab:AddButton({
+	Name = "CMD-X",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+  	end    
+})
+
+
+local LocalPlayerTab = Window:MakeTab({
+	Name = "LocalPlayer",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+LocalPlayerTab:AddButton({
+	Name = "E to noclip",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/noclip/main/noclip'),true))()
+  	end    
+})
+
+LocalPlayerTab:AddButton({
+	Name = "Q to Invisible r15 game",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/Invisible/main/Invisible'),true))()
+  	end    
+})
+
+LocalPlayerTab:AddButton({
+	Name = "inf jump",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/inf-jump/main/inf%20jump'),true))()  
+  	end    
+})
+
+LocalPlayerTab:AddButton({
+	Name = "fly gui",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/fly/main/fly'),true))()
+  	end    
+})
+
+LocalPlayerTab:AddButton({
+	Name = "ctrl+click to tp",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/tp/main/tp'),true))()  
+  	end    
+})
+
+LocalPlayerTab:AddButton({
+	Name = "esp",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/esp/main/esp'),true))()    
+  	end    
+})
+
+LocalPlayerTab:AddButton({
+	Name = "Full bright",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/fullbright/main/fullbright'),true))()
+  	end    
+})
+
+LocalPlayerTab:AddButton({
+	Name = "x to open x ray",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/x-ray/main/x%20ray'),true))()   
+  	end    
+})
+
+LocalPlayerTab:AddButton({
+	Name = "R6 God mod",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/r6godmod/main/1'),true))() 
+  	end    
+})
+
+LocalPlayerTab:AddButton({
+	Name = "R6 and R15 God mod",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/r6r15godmod/main/2'),true))() 
+  	end    
+})
+
+
+
+LocalPlayerTab:AddSlider({
+	Name = "WalkSpeed",
+	Min = 16,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WalkSpeed",
+	Callback = function(s)
+		print(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+
+	end    
+})
+
+LocalPlayerTab:AddSlider({
+	Name = "Jumppower",
+	Min = 50,
+	Max = 500,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Jumppower",
+	Callback = function(s)
+		print(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+
+	end    
+})
+
+
+LocalPlayerTab:AddButton({
+	Name = "Reset WS/JP",
+	Callback = function()
+      		print("button pressed")
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+  	end    
+})
+
+local GameTab = Window:MakeTab({
+	Name = "Game hub",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+GameTab:AddButton({
+	Name = "NukeVscity",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "Hohohub",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'),true))()
+              
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "VGhub",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'),true))() 
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "ThunderZ hub",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Script'),true))()
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "Dark hub V4",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'),true))()    
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "CFrameHubV2",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/CFrame3310/CFrameHub/main/BloxFruitV2.lua'),true))() 
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "Skk hub",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Des5dw/skk/main/skk%20hub'),true))()
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "Proxima Hub",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua'),true))()   
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "BIG Paintball",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://www.pastebin.com/raw/PuaaGKsT'),true))()
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "build a boat for treasure",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Deni210/BABFT/main/Ruby%20Hub'),true))() 
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "Strikehub",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/Strikehubv2z/StormSKz/main/All_in_one'),true))()
+  	end    
+})
+
+local FunTab = Window:MakeTab({
+	Name = "Fun",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+FunTab:AddButton({
+	Name = "tp tool",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/Des5dw/tptool/main/tptool'))()  
+  	end    
+})
+
+FunTab:AddButton({
+	Name = "Tool Animator",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/Des5dw/Tool-Animator/main/Tool%20Animator'))()
+  	end    
+})
+
+FunTab:AddButton({
+	Name = "Neodymn's Draw Tool",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/Des5dw/Neodymn-s-Draw-Tool/main/Neodymn%20s%20Draw%20Tool'))() 
+  	end    
+})
+
+FunTab:AddButton({
+	Name = "Remote Control",
+	Callback = function()
+      		print("button pressed")
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/Des5dw/Remote-Control/main/Remote%20Control'))()   
+  	end    
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control z - make it morning"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control x - make it night"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control c - clean workspace"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control v - heal the player"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control f - make the player fat"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control n - make everyone fat"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control e - annihilate the player"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control p - suicide"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control k - kill other players"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control b - control the player"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control r - tp evryone to you"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control t - send the player to 'heaven'"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control q - spawn pet"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Remote Control g - spawn a blackhole"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Draw Tool [=] - Toggle"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Draw Tool [Z] - Undo"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Draw Tool [Left Click] - Draw"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Draw Tool [F] - Clear"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Draw Tool [R] - Rainbow"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Draw Tool [X] - Neon Glow"
+})
+
+local Section = FunTab:AddSection({
+	Name = "Draw Tool [Q] - Toxicity"
+})
+
+local CreditTab = Window:MakeTab({
+	Name = "Credit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+CreditTab:AddParagraph("Skk hub V2","Project Skk Created")
+
+local Section = CreditTab:AddSection({
+	Name = "Last updated 2023/1/6"
+})
+
+CreditTab:AddButton({
+	Name = "copy old Skk hub link",
+	Callback = function()
+		setclipboard("https://raw.githubusercontent.com/Des5dw/skk-hub/main/skk%20hub")
+  	end    
+})
+
+CreditTab:AddButton({
+	Name = "Destroying the Interface",
+	Callback = function()
+      		print("button pressed")
+              OrionLib:Destroy()
+  	end    
+})
+
+
+OrionLib:Init()
