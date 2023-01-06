@@ -408,9 +408,10 @@ local Section = CreditTab:AddSection({
 })
 
 CreditTab:AddButton({
-	Name = "copy old Skk hub link",
+	Name = "old Skk Hub",
 	Callback = function()
-		setclipboard("https://raw.githubusercontent.com/Des5dw/skk-hub/main/skk%20hub")
+      		print("button pressed")
+			  loadstring(game:HttpGet('https://raw.githubusercontent.com/Des5dw/Copy/main/1'))()
   	end    
 })
 
